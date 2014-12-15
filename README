@@ -1,0 +1,4 @@
+File: cgi-bin/redirect/index.php
+Author: Stephen Koo <sckoo@cs.stanford.edu>
+
+A simple stepping-stone page that redirects the user to the address specified in the GET variable named "t". The ".htaccess" file in this "redirect" directory limits access only to those with SUNet IDs. Thus this redirect allows the user to be authenticated first through WebAuth on this page before being redirected to the target. The purpose in this case was to conserve hash parameters (URL escape code "%23"), used in the target pages, that were lost through the WebAuth authentication process.
